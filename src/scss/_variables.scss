@@ -1,0 +1,48 @@
+// COLORS
+$black: #000;
+$darkest-grey: lighten($black, 15%);
+$darker-grey: lighten($black, 30%);
+$dark-grey: lighten($black, 45%);
+$light-grey: lighten($black, 60%);
+$lighter-grey: lighten($black, 75%);
+$lightest-grey: lighten($black, 90%);
+$white: #FFF;
+
+
+.black {
+  background-color: $black;
+}
+
+.darkest-grey {
+  background-color: $darkest-grey;
+}
+
+.darker-grey {
+  background-color: $darker-grey;
+}
+
+.dark-grey {
+  background-color: $dark-grey;
+}
+
+.light-grey {
+  background-color: $light-grey;
+}
+
+.lighter-grey {
+  background-color: $lighter-grey;
+}
+
+.lightest-grey {
+  background-color: $lightest-grey;
+}
+
+.white {
+  background-color: $white;
+}
+
+
+
+// GRID
+
+$grid-unit-width: 80px;
