@@ -1,12 +1,12 @@
 {
-  "name": "angular-grunt",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "A simple demo of grunt",
+  "description": "A portfolio to present myself and my work",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mike Hayden <mickyginger@gmail.com> (https://github.com/mickyginger)",
+  "author": "Ollie Holden <odholden@gmail.com> (https://github.com/odholden)",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",
