@@ -32,7 +32,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['src/js/**/*.js'],
-        tasks: ['jshint', 'concat'],
+        tasks: ['concat'],
         options: { livereload: true }
       },
       index: {

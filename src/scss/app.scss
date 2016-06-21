@@ -1,3 +1,31 @@
+@import "reset/reset";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "font-awesome/scss/font-awesome";
+
+//SCSS goes here, as well as any other desired imports
+
+body {
+  font-family: $helvetica;
+  -webkit-font-smoothing: antialiased;
+
+  ul {
+    @include display(flex);
+    @include flex-wrap(wrap);
+
+
+    li {
+      @include size(9em);
+      @include border-width(1em);
+      @include border-style(solid);
+      @include border-color(red);
+      @include margin(2em);
+      @include fill-parent;
+
+      &.name {
+        @include span-columns(6);
+      }
+    }
+  }
+}
+

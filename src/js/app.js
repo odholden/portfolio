@@ -1,3 +1,1 @@
-function yo() {
-  
-}
+// javascript goes here, or elsewhere within this js folder
