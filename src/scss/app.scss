@@ -5,11 +5,31 @@
 @import "vendor/font-awesome/scss/font-awesome";
 
 // My imports
-@import "variables";
 @import "grid";
+@import "variables";
 
 body {
   font-family: $helvetica;
   -webkit-font-smoothing: antialiased;
 }
 
+.name {
+  @include two-thirds-width;
+}
+
+.filters {
+  @include third-width;
+}
+
+.bio {
+  @include half-width;
+  @include double-height;
+}
+
+.project {
+  @include half-width;
+}
+
+.link {
+  @include quarter-width;
+}

@@ -1,45 +1,48 @@
-$grid-unit-width: 80px;
-$grid-unit-height: 160px;
+$grid-unit-width: 60px;
+$grid-unit-height: 120px;
 
-ul {
+@mixin quarter-width {
+  min-width: $grid-unit-width * 3;
+}
+
+@mixin third-width {
+  min-width: $grid-unit-width * 4;
+}
+
+@mixin half-width {
+  min-width: $grid-unit-width * 6;
+}
+
+@mixin two-thirds-width {
+  min-width: $grid-unit-width * 8;
+}
+
+@mixin three-quarters-width {
+  min-width: $grid-unit-width * 9;
+}
+
+@mixin full-wide {
+  min-width: $grid-unit-width * 12;
+}
+
+@mixin double-height {
+  height: $grid-unit-height * 2;
+}
+
+@mixin triple-height {
+  height: $grid-unit-height * 3;
+}
+
+.grid {
   @include display(flex);
   @include flex-wrap(wrap);
-  max-width: 960px;
+  width: 100%;
 
-  li {
+  div {
     @include flex-grow(1);
-    height: 100px;
-
-    &.quarter-width {
-      min-width: $grid-unit-width * 3;
-    }
-
-    &.third-width {
-      min-width: $grid-unit-width * 4;
-    }
-
-    &.half-width {
-      min-width: $grid-unit-width * 6;
-    }
-
-    &.two-thirds-width {
-      min-width: $grid-unit-width * 8;
-    }
-
-    &.three-quarters-width {
-      min-width: $grid-unit-width * 9;
-    }
-
-    &.full-wide {
-      min-width: $grid-unit-width * 12;
-    }
-
-    &.double-height {
-      height: $grid-unit-height * 2;
-    }
-
-    &.triple-height {
-      height: $grid-unit-height * 3;
-    }
+    width: $grid-unit-width;
+    height: $grid-unit-height;
+    box-sizing: border-box;
+    border: 5px solid grey;
   }
 }
