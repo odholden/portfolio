@@ -6,30 +6,18 @@
 
 // My imports
 @import "grid";
-@import "variables";
+@import "fonts";
 
 body {
   font-family: $helvetica;
   -webkit-font-smoothing: antialiased;
 }
 
-.name {
-  @include two-thirds-width;
+main {
+  div.card {
+    @include third-width;
+    border-top: 5px solid black;
+  }
 }
 
-.filters {
-  @include third-width;
-}
 
-.bio {
-  @include half-width;
-  @include double-height;
-}
-
-.project {
-  @include half-width;
-}
-
-.link {
-  @include quarter-width;
-}

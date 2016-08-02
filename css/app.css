@@ -2990,24 +2990,3 @@ body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
-.name {
-  min-width: 480px;
-}
-
-.filters {
-  min-width: 240px;
-}
-
-.bio {
-  min-width: 360px;
-  height: 240px;
-}
-
-.project {
-  min-width: 360px;
-}
-
-.link {
-  min-width: 180px;
-}
